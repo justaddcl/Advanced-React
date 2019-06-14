@@ -1,0 +1,38 @@
+{
+  "extends": "airbnb",
+  "parserOptions" : {
+      "ecmaVersion": 2018
+  },
+  "env" : {
+      "node": true,
+      "browser": true,
+      "es6": true
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      {
+        "aspects": [
+          "invalidHref"
+        ]
+      }
+    ],
+    "no-unused-expressions": [
+      2,
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "react/prefer-stateless-function": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}
