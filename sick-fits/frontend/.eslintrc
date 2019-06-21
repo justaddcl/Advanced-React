@@ -1,14 +1,23 @@
 {
-  "extends": "airbnb",
-  "parserOptions" : {
-      "ecmaVersion": 2018
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
   },
-  "env" : {
-      "node": true,
-      "browser": true,
-      "es6": true
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018
   },
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
+    "jsx-a11y/accessible-emoji": 0,
     "jsx-a11y/anchor-is-valid": [
       "warn",
       {
@@ -21,6 +30,14 @@
       2,
       {
         "allowTaggedTemplates": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80
       }
     ],
     "react/prefer-stateless-function": 0,
