@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from './theme';
 
 const NavStyles = styled.ul`
   margin: 0;
@@ -13,11 +14,12 @@ const NavStyles = styled.ul`
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1em;
     background: none;
     border: 0;
     cursor: pointer;
+    color: ${theme.black};
     @media (max-width: 700px) {
       font-size: 10px;
       padding: 0 10px;
